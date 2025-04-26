@@ -2,6 +2,9 @@
 
 Welcome to the Content Research Crew project, powered by [crewAI](https://crewai.com). This project implements a multi-agent AI system that creates comprehensive research guides on any topic. The system leverages crewAI's powerful framework to coordinate multiple AI agents that collaborate on researching, writing, and reviewing content.
 
+
+In this project we have added the real time information support by using SERPER API to get the latest information about the topic.
+
 ## System Architecture
 
 ![Flow Diagram](flow_diagram.svg)
@@ -35,7 +38,7 @@ crewai install
 ```
 
 3. Configure your environment:
-- Copy `.env.example` to `.env`
+- Create a `.env` file
 - Add your `GEMINI_API_KEY` to `.env`
 - Add your `SERPER_API_KEY` to `.env`
 
