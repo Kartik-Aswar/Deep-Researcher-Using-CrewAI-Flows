@@ -36,14 +36,15 @@ crewai install
 
 3. Configure your environment:
 - Copy `.env.example` to `.env`
-- Add your `OPENAI_API_KEY` to `.env`
+- Add your `GEMINI_API_KEY` to `.env`
+- Add your `SERPER_API_KEY` to `.env`
 
 ## Configuration
 
 Customize the system by modifying:
 
-- `src/researcher_content/config/agents.yaml`: Define agent roles and capabilities
-- `src/researcher_content/config/tasks.yaml`: Configure research and writing tasks
+- `src/researcher_content/config/agents.py`: Define agent roles and capabilities
+- `src/researcher_content/config/tasks.py`: Configure research and writing tasks
 - `src/researcher_content/crew.py`: Implement custom logic and tools
 - `src/researcher_content/main.py`: Adjust input handling and flow control
 
@@ -76,8 +77,8 @@ The system generates comprehensive guides with:
 
 To extend or modify the system:
 
-1. Add new agent types in `config/agents.yaml`
-2. Create custom tasks in `config/tasks.yaml`
+1. Add new agent types in `config/agents.py`
+2. Create custom tasks in `config/tasks.py`
 3. Implement new tools in `src/researcher_content/tools/`
 4. Modify the flow logic in `main.py`
 
